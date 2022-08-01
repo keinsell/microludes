@@ -1,0 +1,62 @@
+{
+	"name": "microlude-node-cockroach",
+
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "codespace",
+	"workspaceFolder": "/workspace",
+
+	"forwardPorts": [3000, 27017, 26257],
+	"remoteUser": "node",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"mongodb.mongodb-vscode",
+				"WallabyJs.quokka-vscode",
+				"vivaxy.vscode-conventional-commits",
+				"ms-azuretools.vscode-docker",
+				"esbenp.prettier-vscode",
+				"WallabyJs.wallaby-vscode",
+				"gabrielgrinberg.auto-run-command",
+				"mutantdino.resourcemonitor",
+				"Prisma.prisma-insider",
+				"eg2.vscode-npm-script"
+			],
+			"settings": {
+				"quokka.automaticRestart": true,
+				"quokka.automaticStartRegex": ".scratchpad.ts",
+				"quokka.suppressExpirationNotifications": true,
+				"quokka.showValueOnMultilineSelection": true,
+				"quokka.compactMessageOutput": true,
+				"quokka.colors": {
+					"covered": "#62b455",
+					"errorPath": "#ffa0a0",
+					"errorSource": "#fe536a",
+					"notCovered": "#cccccc",
+					"partiallyCovered": "#d2a032"
+				},
+				"resmon.show.cpufreq": false,
+				"resmon.show.disk": true,
+				"resmon.disk.format": "PercentRemaining",
+				"resmon.disk.drives": ["/dev/sda1"]
+			}
+		}
+	},
+
+	"postCreateCommand": "yarn",
+
+	"features": {
+		"docker-in-docker": "20.10",
+		"kubectl-helm-minikube": "1.23",
+		"terraform": "1.2",
+		"git": "os-provided",
+		"git-lfs": "latest",
+		"github-cli": "latest",
+		"homebrew": "latest",
+		"fish": "latest",
+		"python": "os-provided",
+		"golang": "1.18",
+		"rust": "1.55"
+	}
+}
