@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "node-esm@16",
+	"extends": "./typesafety.json",
+	"compilerOptions": {
+		"lib": ["es2021"],
+		"module": "es2022",
+		"target": "es2021",
+		"strict": true,
+		"moduleResolution": "node",
+		"checkJs": true
+	}
+}
