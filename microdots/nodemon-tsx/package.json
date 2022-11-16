@@ -4,6 +4,6 @@
 	},
 	"devDependencies": {
 		"tsx": "3.8.0",
-		"nodemon": "2.0.19"
+		"nodemon": "2.0.20"
 	}
 }
